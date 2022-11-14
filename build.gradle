@@ -1,9 +1,16 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
 group 'org.beagoodgirl'
 version '1.0-SNAPSHOT'
+
+compileJava.options.encoding = 'UTF-8'
+
+application {
+    mainClassName 'org.beagoodgirl.Main'
+}
 
 repositories {
     mavenCentral()
